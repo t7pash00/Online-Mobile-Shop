@@ -6,3 +6,5 @@ var mysql = require('mysql');
     database: 'mobileshopping'
   });
   module.exports = connection;
+
+  //now able to use database by both of team members
