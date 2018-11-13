@@ -1,1 +1,7 @@
-//Now going to create a model for phones to fetch the data from database
+var db = require('../database');
+var phones = {
+  getAllphones: function(callback) {
+    return db.query('select * from phones', callback);
+  }
+};
+module.exports = phones;
