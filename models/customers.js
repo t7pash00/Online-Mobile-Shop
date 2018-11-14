@@ -23,6 +23,28 @@ var customers = {
       ],
       callback
     );
+  },
+  deletecustomer: function(customer_id, callback) {
+    return db.query(
+      'delete from customers where customer_id=?',
+      [customer_id],
+      callback
+    );
+  },
+  updatecustomer: function(customer_id, customers, callback) {
+    return db.query(
+      'update customers set firstname=?,lastname=?, phone=?, streetAddress=?, city=?, postalCode=? where customer_id=?',
+      [
+        customers.firstname,
+        customers.lastname,
+        customers.phone,
+        customers.streetAddress,
+        customers.city,
+        customers.postalCode,
+        customer_id    
+        ],
+      callback
+    );
   }
   };
   module.exports = customers;
