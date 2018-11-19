@@ -1,55 +1,38 @@
 var db = require('../database');
 var orders = {
-  getAllcartproducts: function(customer_id,callback) {
+  getAllorders: function(callback) {
     return db.query(
-      'select a.*,b.*,c.firstname from orders a,phones b,customers c where a.customer_id=? and a.order_status=1 and a.phone_id=b.phone_id and c.customer_id=?',
-      [customer_id,customer_id], 
+      'select * from orders inner join phones ON orders.phone_id=phones.phone_id INNER JOIN customers ON orders.customer_id=customers.customer_id', 
+  
+      callback);
+  },
+  getOrdersByorder_id: function(order_id, callback) {
+    return db.query(
+      'select * from orders inner join phones ON orders.phone_id=phones.phone_id INNER JOIN customers ON orders.customer_id=customers.customer_id where orders.phone_id=?',
+      [order_id],
       callback
     );
   },
-  getAllPaidproducts: function(customer_id,callback) {
+  addorders: function(orders, callback) {
     return db.query(
-      'select * from orders where customer_id=? and order_status=2',
-      [customer_id], 
-      callback
-    );
-  },
-  getAllPaidproducts: function(customer_id,callback) {
-    return db.query(
-      'select * from orders where customer_id=? and order_status=3',
-      [customer_id], 
-      callback
-    );
-  },
-  getborrowByborrow_id: function(borrow_id, callback) {
-    return db.query(
-      'select firstname,lastname,book_name,borrow_date,return_date from borrows inner join books ON borrows.book_id=books.book_id INNER JOIN borrowers ON borrows.borrower_id=borrowers.borrower_id where borrows.book_id=?',
-      [borrow_id],
-      callback
-    );
-  },
-  addToCart: function(orders, callback) {
-    return db.query(
-      'INSERT INTO orders (order_id, customer_id, phone_id, order_date, order_status, quantity,price)VALUES(?,?,?,?,?,?,?  );',
+      'INSERT INTO orders VALUES(?,?,?,?,?,?);',
       [
-        orders.order_id,
-        orders.customer_id,
         orders.phone_id,
-        orders.order_date,
-        1,
+        orders.customer_id,
+        orders.order_date, 
+        orders.order_status,
         orders.quantity,
         orders.price
       ],
       callback
     );
   },
-  deleteborrow: function(phone_id, callback) {
-    return db.query('delete from borrows where book_id=?', [phone_id], callback);
-  },
-  updateborrow: function(phone_id, borrows, callback) {
+  updateorder: function(phone_id, orders, callback) {
+    const phoneprice = db.query("select price from phones where phone_id =?", [phones.phone_id])
+    const total_price = phoneprice * orders.quantity;
     return db.query(
-      'update borrows set borrower_id=?, borrow_date=?, return_date=? where _id=phone?',
-      [borrows.borrower_id, borrows.borrow_date, borrows.return_date, phone_id],
+      'update orders set customer_id=?, ordersquantity=?, price=? where phone_id=?',
+      [orders.customer_id,orders.order_date=new Date(),orders.order_status=1, orders.quantity, total_price, phone_id],
       callback
     );
   }
