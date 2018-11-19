@@ -43,13 +43,13 @@ var orders = {
       callback
     );
   },
-  deleteborrow: function(book_id, callback) {
-    return db.query('delete from borrows where book_id=?', [book_id], callback);
+  deleteborrow: function(phone_id, callback) {
+    return db.query('delete from borrows where book_id=?', [phone_id], callback);
   },
-  updateborrow: function(book_id, borrows, callback) {
+  updateborrow: function(phone_id, borrows, callback) {
     return db.query(
-      'update borrows set borrower_id=?, borrow_date=?, return_date=? where book_id=?',
-      [borrows.borrower_id, borrows.borrow_date, borrows.return_date, book_id],
+      'update borrows set borrower_id=?, borrow_date=?, return_date=? where _id=phone?',
+      [borrows.borrower_id, borrows.borrow_date, borrows.return_date, phone_id],
       callback
     );
   }
