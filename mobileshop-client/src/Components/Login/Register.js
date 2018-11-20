@@ -44,12 +44,12 @@ class AddCustomer extends Component {
         <h2>Add Customer</h2>
         <form onSubmit={this.handleSubmit}>
           <label>
-        <b>firstname</b>
+        firstname
             <input type="text" name="firstname" onChange={this.onChange} />
             <br/>
           </label>
           <label>
-          <b>lastname</b>
+          lastname
             <input type="text" name="lastname" onChange={this.onChange} />
             <br/>
           </label>
