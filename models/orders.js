@@ -13,14 +13,15 @@ var orders = {
       callback
     );
   },
-  addorders: function(orders, callback) {
+  addorder: function(orders, callback) {
     return db.query(
-      'INSERT INTO orders VALUES(?,?,?,?,?,?);',
+      'INSERT INTO orders VALUES(?, ?, ?, ?, ?, ?, ?)',
       [
-        orders.phone_id,
+        orders.order_id,
         orders.customer_id,
+        orders.phone_id,
         orders.order_date, 
-        orders.order_status,
+        1,
         orders.quantity,
         orders.price
       ],
@@ -28,13 +29,15 @@ var orders = {
     );
   },
   updateorder: function(phone_id, orders, callback) {
-    const phoneprice = db.query("select price from phones where phone_id =?", [phones.phone_id])
+    const phoneprice = db.query("select price from phones where phone_id =?", [phone_id]);
     const total_price = phoneprice * orders.quantity;
     return db.query(
-      'update orders set customer_id=?, ordersquantity=?, price=? where phone_id=?',
-      [orders.customer_id,orders.order_date=new Date(),orders.order_status=1, orders.quantity, total_price, phone_id],
+      'update orders set customer_id=?, quantity=?, price=? where phone_id=?',
+      [orders.customer_id, orders.quantity, total_price, phone_id],
       callback
     );
+      
+   
   }
 };
 module.exports = orders;

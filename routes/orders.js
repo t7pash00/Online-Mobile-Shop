@@ -24,7 +24,7 @@ router.get('/:order_id?', function (req, res, next) {
 );
 router.post('/',
     function (req, res, next) {
-        targetOrders.addToCart(req.body,
+        targetOrders.addorder(req.body,
             function (err, count) {
                 if (err) {
                     res.json(err);
