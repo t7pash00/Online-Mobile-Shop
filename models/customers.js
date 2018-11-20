@@ -11,11 +11,13 @@ var customers = {
   },
   addcustomer: function(customers, callback) {
     return db.query(
-      'insert into customers values(?,?,?,?,?,?,?)',
+      'insert into customers values(?,?,?,?,?,?,?,?,?)',
       [
         customers.customer_id,
         customers.firstname,
         customers.lastname,
+        customers.email,
+        customers.password,
         customers.phone,
         customers.streetAddress,
         customers.city,
@@ -33,10 +35,12 @@ var customers = {
   },
   updatecustomer: function(customer_id, customers, callback) {
     return db.query(
-      'update customers set firstname=?,lastname=?, phone=?, streetAddress=?, city=?, postalCode=? where customer_id=?',
+      'update customers set firstname=?,lastname=?,email=?,password=?, phone=?, streetAddress=?, city=?, postalCode=? where customer_id=?',
       [
         customers.firstname,
         customers.lastname,
+        customers.email,
+        customers.password,
         customers.phone,
         customers.streetAddress,
         customers.city,
