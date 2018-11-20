@@ -35,7 +35,7 @@ var customers = {
   },
   updatecustomer: function(customer_id, customers, callback) {
     return db.query(
-      'update customers set firstname=?,lastname=?,email=?,password=?, phone=?, streetAddress=?, city=?, postalCode=? where customer_id=?',
+      'update customers set firstname=?,lastname=?, email=?, password=?, phone=?, streetAddress=?, city=?, postalCode=? where customer_id=?',
       [
         customers.firstname,
         customers.lastname,
