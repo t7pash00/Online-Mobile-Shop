@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import './Register.css';
 
-class AddCustomer extends Component {
+class Registermodal extends Component {
   constructor() {
     super();
     this.onChange = this.onChange.bind(this);
@@ -40,24 +41,30 @@ class AddCustomer extends Component {
 
   render() {
     return (
-      <div className="container">
-        <h2>Add Customer</h2>
+      <div>
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+      
+     
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+         
+          <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Registration</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+            <div className="container">
+      
         <form onSubmit={this.handleSubmit}>
           <label>
-<<<<<<< HEAD
         firstname
-=======
-        <b>firstname</b>
->>>>>>> master
             <input type="text" name="firstname" onChange={this.onChange} />
             <br/>
           </label>
           <label>
-<<<<<<< HEAD
           lastname
-=======
-          <b>lastname</b>
->>>>>>> master
             <input type="text" name="lastname" onChange={this.onChange} />
             <br/>
           </label>
@@ -73,7 +80,7 @@ class AddCustomer extends Component {
             </label>
             <label>
         phone:
-            <input type="number" name="phone" onChange={this.onChange} />
+            <input type="tel" name="phone" onChange={this.onChange} />
             <br/>
           </label>
           <label>
@@ -86,18 +93,31 @@ class AddCustomer extends Component {
             <input type="text" name="city" onChange={this.onChange} />
             <br/>
           </label>
+          <br/>
           <label>
-          postalCode:
+          postalCode: </label>
             <input type="text" name="postalCode" onChange={this.onChange} />
-            <br/>
-          </label>
+            <br/> 
+         
           <button className="button" type="submit">
-            Add
+           Register
           </button>
         </form>
       </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      </div>
+
+     
     );
   }
 }
 
-export default AddCustomer;
+
+export default Registermodal;

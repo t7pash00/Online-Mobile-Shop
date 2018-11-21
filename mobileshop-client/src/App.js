@@ -3,7 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Drawer';
 import Sidebar from './Components/Drawer1';
-import AddCustomer from './Components/Login/Register';
+import LoginCustomer from './Components/Login/Login';
+import Registermodal from './Components/Login/Register';
 
 class App extends Component {
   render() {
@@ -11,7 +12,8 @@ class App extends Component {
           <div> 
                 <Navbar/>
                 <Sidebar/>
-                <AddCustomer/>
+                <Registermodal/>
+                <LoginCustomer/>
           </div>
           
     );
