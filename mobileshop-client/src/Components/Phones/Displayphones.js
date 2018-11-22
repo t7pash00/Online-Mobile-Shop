@@ -1,4 +1,13 @@
-class Sidebar extends Component {
+
+import React, { Component } from 'react';
+import axios from 'axios';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+
+
+
+class Displayphones extends Component {
     constructor() {
         super();
         this.showPhones = this.showPhones.bind(this);
@@ -16,7 +25,7 @@ class Sidebar extends Component {
   render() {
     const { tableData } = this.state;
     return (
-        <div style={{marginTop:'50px', width:'260px', height: '700px'}}>
+        <div style={{marginTop:'80px', width:'340px', height: '400px'}}>
       <List component="nav">
         <ListItem button>
           <ListItemText primary="Samsung" />
@@ -37,4 +46,4 @@ class Sidebar extends Component {
   }
 }
 
-export default Sidebar;
+export default Displayphones;
