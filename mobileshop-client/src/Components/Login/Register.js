@@ -41,83 +41,86 @@ class Registermodal extends Component {
 
   render() {
     return (
-      <div>
-      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
       
-     
-      <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-      
-         
-          <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Registration</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-            <div className="container">
-      
-        <form onSubmit={this.handleSubmit}>
-          <label>
-        firstname
-            <input type="text" name="firstname" onChange={this.onChange} />
-            <br/>
-          </label>
-          <label>
-          lastname
-            <input type="text" name="lastname" onChange={this.onChange} />
-            <br/>
-          </label>
-          <label>
-          email:
-            <input type="text" name="email" onChange={this.onChange} />
-            <br/>
-            </label>
-            <label>
-            password:
-            <input type="text" name="password" onChange={this.onChange} />
-            <br/>
-            </label>
-            <label>
-        phone:
-            <input type="tel" name="phone" onChange={this.onChange} />
-            <br/>
-          </label>
-          <label>
-        streetAddress:
-            <input type="text" name="streetAddress" onChange={this.onChange} />
-            <br/>
-          </label>
-          <label>
-          city:
-            <input type="text" name="city" onChange={this.onChange} />
-            <br/>
-          </label>
-          <br/>
-          <label>
-          postalCode: </label>
-            <input type="text" name="postalCode" onChange={this.onChange} />
-            <br/> 
-         
-          <button className="button" type="submit">
-           Register
-          </button>
-        </form>
-      </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-      
-        </div>
-      </div>
-      </div>
+                            <form onSubmit={this.handleSubmit}>
+                            
+                            
+                          
+                                <div id="myModal" class="modal fade" role="dialog">
+                                  <div class="modal-dialog">
+                                
+                                  
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h4 class="modal-title">Registration</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      </div>
+                                      <div class="modal-body">
+                                  
+                                
+                                            <label>
+                                          firstname
+                                              <input type="text" name="firstname" onChange={this.onChange} />
+                                              <br/>
+                                            </label>
+                                            <label>
+                                            lastname
+                                              <input type="text" name="lastname" onChange={this.onChange} />
+                                              <br/>
+                                            </label>
+                                            <label>
+                                            email:
+                                              <input type="text" name="email" onChange={this.onChange} />
+                                              <br/>
+                                              </label>
+                                              <label>
+                                              password:
+                                              <input type="text" name="password" onChange={this.onChange} />
+                                              <br/>
+                                              </label>
+                                              <label>
+                                          phone:
+                                              <input type="tel" name="phone" onChange={this.onChange} />
+                                              <br/>
+                                            </label>
+                                            <label>
+                                          streetAddress:
+                                              <input type="text" name="streetAddress" onChange={this.onChange} />
+                                              <br/>
+                                            </label>
+                                            <label>
+                                            city:
+                                              <input type="text" name="city" onChange={this.onChange} />
+                                              <br/>
+                                            </label>
+                                            <br/>
+                                            <label>
+                                            postalCode: </label>
+                                              <input type="text" name="postalCode" onChange={this.onChange} />
+                                              <br/> 
+                                              </div>
 
-     
-    );
-  }
-}
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                              <button className="btn btn-success" type="submit">Register</button>
+                                              
+                                              </div>
+                                            </div>
+                                        
+                                            </div>
+                                         </div>
+                                 </form>       
+                                             
+                                            );
+                                        }
+                                    }
+                                    
+                             export default Registermodal;            
+                                             
+                                        
+                                    
+                                       
 
-
-export default Registermodal;
+                               
+                                            
+                         
