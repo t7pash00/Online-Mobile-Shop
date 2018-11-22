@@ -17,7 +17,7 @@ class Navbar extends Component {
           </Typography>
           <div style={{position:'absolute',right:'20px'}}> 
           <Button color="inherit">Login</Button>
-          <Button color="inherit">Register</Button>
+          <Button color="inherit"><a data-toggle="modal" data-target="#myModal">Register</a></Button>   
           </div>
           
         </Toolbar>
