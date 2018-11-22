@@ -16,8 +16,8 @@ class Navbar extends Component {
             MobilePhone
           </Typography>
           <div style={{position:'absolute',right:'20px'}}> 
-          <Button color="inherit">Login</Button>
-          <Button color="inherit"><a data-toggle="modal" data-target="#myModal">Register</a></Button>   
+          <Button color="inherit"><a data-toggle="modal" data-target="#loginpage">Login</a></Button>
+          <Button color="inherit"><a data-toggle="modal" data-target="#registerpage">Register</a></Button>   
           </div>
           
         </Toolbar>

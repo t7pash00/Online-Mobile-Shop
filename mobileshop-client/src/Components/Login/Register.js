@@ -46,7 +46,7 @@ class Registermodal extends Component {
                             
                             
                           
-                                <div id="myModal" class="modal fade" role="dialog">
+                                <div id="registerpage" class="modal fade" role="dialog">
                                   <div class="modal-dialog">
                                 
                                   
