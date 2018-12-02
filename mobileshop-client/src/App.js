@@ -5,6 +5,7 @@ import Navbar from './Components/Phones/Drawer';
 import Sidebar from './Components/Phones/Drawer1';
 import Loginmodal from './Components/Login/Login';
 import Registermodal from './Components/Login/Register';
+import Displayphones from './Components/Phones/Displayphones';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
             <Sidebar/>
                 <Registermodal/>
                 <Loginmodal/>
+                <Displayphones/>
 
           </div>
           

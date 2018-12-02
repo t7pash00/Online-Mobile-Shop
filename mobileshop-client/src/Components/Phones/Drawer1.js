@@ -22,7 +22,7 @@ class Sidebar extends Component {
   render() {
     const { tableData } = this.state;
     return (
-        <div style={{marginTop:'50px', width:'260px', height: '700px'}}>
+        <div style={{marginTop:'50px', width:'260px' }}>
       <List component="nav">
         <ListItem button>
           <ListItemText primary="Samsung" />
