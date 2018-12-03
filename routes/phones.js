@@ -20,6 +20,19 @@ var express = require('express');
       });
     }
   });
+  
+  router.get('/phones_by_brand/:brand_name', function(req, res, next) {
+    phones.getphoneBybrand_name(req.params.brand_name, function(err, rows) {
+      if (err) {
+        res.json(err);
+      } else {
+        res.json(rows); 
+      }
+    });
+  });
+    
+
+
   router.post('/', function(req, res, next) {
     phones.addphone(req.body, function(err, count) {
       if (err) {
