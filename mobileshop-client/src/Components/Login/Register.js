@@ -58,47 +58,65 @@ class Registermodal extends Component {
                                       <div class="modal-body">
                                   
                                 
-                                            <label>
-                                          firstname
-                                              <input type="text" name="firstname" onChange={this.onChange} />
-                                              <br/>
-                                            </label>
-                                            <label>
-                                            lastname
-                                              <input type="text" name="lastname" onChange={this.onChange} />
-                                              <br/>
-                                            </label>
-                                            <label>
-                                            email:
-                                              <input type="text" name="email" onChange={this.onChange} />
-                                              <br/>
-                                              </label>
-                                              <label>
-                                              password:
-                                              <input type="text" name="password" onChange={this.onChange} />
-                                              <br/>
-                                              </label>
-                                              <label>
-                                          phone:
-                                              <input type="tel" name="phone" onChange={this.onChange} />
-                                              <br/>
-                                            </label>
-                                            <label>
-                                          streetAddress:
-                                              <input type="text" name="streetAddress" onChange={this.onChange} />
-                                              <br/>
-                                            </label>
-                                            <label>
-                                            city:
-                                              <input type="text" name="city" onChange={this.onChange} />
-                                              <br/>
-                                            </label>
-                                            <br/>
-                                            <label>
-                                            postalCode: </label>
-                                              <input type="text" name="postalCode" onChange={this.onChange} />
-                                              <br/> 
+                                           
+
+                                              <div class="form-group row">
+                                                  <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Firstname :</label>
+                                                <div class="col-sm-7">
+                                                    <input type="text" class="form-control form-control-sm"  placeholder="Firstname"onChange={this.onChange}/>
+                                                </div>
                                               </div>
+                                              <div class="form-group row">
+                                                  <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Lastname :</label>
+                                                <div class="col-sm-7">
+                                                    <input type="text" class="form-control form-control-sm"  placeholder="Lastname" onChange={this.onChange}/>
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                  <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Email :</label>
+                                                <div class="col-sm-7">
+                                                    <input type="text" class="form-control form-control-sm"  placeholder="Email"onChange={this.onChange}/>
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                  <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Password :</label>
+                                                <div class="col-sm-7">
+                                                    <input type="password" class="form-control form-control-sm" placeholder="Password" onChange={this.onChange}/>
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                  <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Phone :</label>
+                                                <div class="col-sm-7">
+                                                    <input type="text" class="form-control form-control-sm"  placeholder="Phone"onChange={this.onChange}/>
+                                                </div>
+                                              </div>
+                                           
+                                              <div class="form-group row">
+                                                  <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">StreetAddress:</label>
+                                                <div class="col-sm-7">
+                                                    <input type="text" class="form-control form-control-sm"  placeholder="StreetAddress"onChange={this.onChange}/>
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                  <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">City:</label>
+                                                <div class="col-sm-7">
+                                                    <input type="text" class="form-control form-control-sm"  placeholder="City"onChange={this.onChange}/>
+                                                </div>
+                                              </div>
+                                             
+                                              <div class="form-group row">
+                                                  <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">PostalCode:</label>
+                                                <div class="col-sm-7">
+                                                    <input type="text" class="form-control form-control-sm"  placeholder="PostalCode"onChange={this.onChange}/>
+                                                </div>
+                                              </div>
+                                            
+                                           
+                                           
+                                            
+                                              
+                                            
+                                            </div>
 
                                             <div class="modal-footer">
                                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
