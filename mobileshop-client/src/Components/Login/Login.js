@@ -58,18 +58,19 @@ class Loginmodal extends Component {
                                       </div>
                                       <div class="modal-body">
                                   
-                                
+                                      <div class="form-group row">
+                                                  <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Email :</label>
+                                                <div class="col-sm-7">
+                                                    <input type="text" class="form-control form-control-sm"  placeholder="email" onChange={this.onChange}/>
+                                                </div>
+                                              </div>
                                           
-                                            <label>
-                                            email:
-                                              <input type="text" name="email" onChange={this.onChange} />
-                                              <br/>
-                                              </label>
-                                              <label>
-                                              password:
-                                              <input type="text" name="password" onChange={this.onChange} />
-                                              <br/>
-                                              </label>
+                                              <div class="form-group row">
+                                                  <label for="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">Password :</label>
+                                                <div class="col-sm-7">
+                                                    <input type="password" class="form-control form-control-sm"  placeholder="password" onChange={this.onChange}/>
+                                                </div>
+                                              </div>
                                              
                                               </div>
 
