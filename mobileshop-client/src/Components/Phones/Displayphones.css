@@ -10,3 +10,15 @@
 .main-wrap .modal .modal-dialog, .main-wrap .modal .modal-content {
     border-radius: 0;
 }
+.main-wrap .modal .modal-dialog .modal-body p {
+    margin: 0;
+}
+.main-wrap .modal .modal-dialog .modal-body .text {
+  
+    font-size: 20px;
+}
+
+.main-wrap .modal .modal-dialog .modal-body .textline {
+   
+    font-size: 15px;
+}
