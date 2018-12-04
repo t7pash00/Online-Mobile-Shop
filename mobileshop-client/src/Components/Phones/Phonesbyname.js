@@ -61,7 +61,7 @@ class Phonesbyname extends Component {
       <div class="row" style={{ marginTop: '80px', height: "auto" }}>
         <div class="col-lg-2">
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <a class="nav-link active" id="v-pills-Samsung-tab" data-toggle="pill" href="#v-pills-Home" role="tab" aria-controls="v-pills-Home" aria-selected="true">Home</a>
+          <a class="nav-link active" id="v-pills-Home-tab" data-toggle="pill" href="#v-pills-Home" role="tab" aria-controls="v-pills-Home" aria-selected="true">Home</a>
             <a class="nav-link" id="v-pills-Samsung-tab" data-toggle="pill" href="#v-pills-Samsung" role="tab" aria-controls="v-pills-Samsung" aria-selected="false">Samsung</a>
             <a class="nav-link" id="v-pills-Apple-tab" data-toggle="pill" href="#v-pills-Apple" role="tab" aria-controls="v-pills-Apple" aria-selected="false">Apple</a>
             <a class="nav-link" id="v-pills-Huawei-tab" data-toggle="pill" href="#v-pills-Huawei" role="tab" aria-controls="v-pills-Huawei" aria-selected="false">Huawei</a>
@@ -72,10 +72,10 @@ class Phonesbyname extends Component {
           
 
               <div class="tab-content" id="v-pills-tabContent">
-              <div class="tab-pane fade" id="v-pills-Home" role="tabpanel" aria-labelledby="v-pills-Home-tab">
+              <div class="tab-pane fade show active" id="v-pills-Home" role="tabpanel" aria-labelledby="v-pills-Home-tab">
                  <Displayphones/>
                 </div>
-                <div class="tab-pane fade show active" id="v-pills-Samsung" role="tabpanel" aria-labelledby="v-pills-Samsung-tab">
+                <div class="tab-pane fade" id="v-pills-Samsung" role="tabpanel" aria-labelledby="v-pills-Samsung-tab">
                 {this.state.samsung.map(samsung => (
                   <div class="col-md-4 mt-3" key={samsung.brand_name}>
                     <p>{samsung.model_name}</p>
