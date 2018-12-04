@@ -3,3 +3,10 @@
 
    height: auto;
 }
+.main-wrap .modal .modal-content .modal-header, .main-wrap .modal .modal-content .modal-footer {
+    margin: 0px;
+    padding: 5px;
+}
+.main-wrap .modal .modal-dialog, .main-wrap .modal .modal-content {
+    border-radius: 0;
+}
