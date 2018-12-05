@@ -9,18 +9,22 @@ var customers = {
       [customer_id], 
       callback);
   },
-  getcustomerByEmailPass: function(customer_email, callback) {
+
+  getcustomerByEmail: function(email, callback) {
     return db.query(
-      'select * from customers where email=?', 
-      [customer_email], 
+      'select * from customers where email=?',
+      [email],
       callback);
+  
   },
-  getcustomerBypassword: function(customer_password, callback) {
+  getcustomerByPassword: function(password, callback) {
     return db.query(
-      'select * from customers where password=?', 
-      [customer_password], 
+      'select * from customers where password=?',
+      [password],
       callback);
-    },
+  
+  },
+  
   addcustomer: function(customers, callback) {
     return db.query(
       'insert into customers values(?,?,?,?,?,?,?,?,?)',

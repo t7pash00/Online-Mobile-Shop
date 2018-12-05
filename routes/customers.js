@@ -4,9 +4,8 @@ var customers = require('../models/customers');
 
 
 
-  router.get('/Login:customer_email?', function(req, res, next){
-
-  customers.getcustomerByEmailPass(req.params.customer_email, function(err,rows ) {
+router.get('/login/:email', function(req, res, next) {
+  customers.getcustomerByEmail(req.params.email, function(err, rows) {
     if (err) {
       res.json(err);
     } else {
@@ -14,9 +13,8 @@ var customers = require('../models/customers');
     }
   });
 });
-router.get('/Login:customer_password?', function(req, res, next){
-
-  customers.getcustomerBypassword(req.params.customer_password, function(err,rows ) {
+router.get('/loginbypassword/:password', function(req, res, next) {
+  customers.getcustomerByPassword(req.params.password, function(err, rows) {
     if (err) {
       res.json(err);
     } else {
@@ -24,6 +22,9 @@ router.get('/Login:customer_password?', function(req, res, next){
     }
   });
 });
+  
+  
+
 
 
 router.get('/:customer_id?', function(req, res, next) {
