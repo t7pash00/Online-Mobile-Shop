@@ -15,6 +15,7 @@ class App extends Component {
                 <Registermodal/>
                 <Loginmodal/>
                 <Phonesbyname/>
+                
           </div>
           
     );

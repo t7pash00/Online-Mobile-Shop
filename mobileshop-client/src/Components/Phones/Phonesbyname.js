@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Displayphones from './Displayphones';
+import PhonesbySamsung from './PhonesbySamsung';
+import PhonesbyApple from './PhonesbyApple';
+import PhonesbyHuawei from './PhonesbyHuawei';
+
+
 
 class Phonesbyname extends Component {
   constructor() {
@@ -71,45 +76,26 @@ class Phonesbyname extends Component {
         <div class="col-lg-10">
           
 
-              <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-content" id="v-pills-tabContlklkhlent">
               <div class="tab-pane fade show active" id="v-pills-Home" role="tabpanel" aria-labelledby="v-pills-Home-tab">
                  <Displayphones/>
                 </div>
-                <div class="tab-pane fade" id="v-pills-Samsung" role="tabpanel" aria-labelledby="v-pills-Samsung-tab">
-                {this.state.samsung.map(samsung => (
-                  <div class="col-md-4 mt-3" key={samsung.brand_name}>
-                    <p>{samsung.model_name}</p>
-                    <p>{samsung.storage_capacity}</p>
-                    <p>{samsung.price}</p>
-                  </div>
-                ))}
+               
+                
+                <div class="tab-pane fade " id="v-pills-Samsung" role="tabpanel" aria-labelledby="v-pills-Samsung-tab">
+               <PhonesbySamsung/>
                 </div>
+
+               
+                
                 <div class="tab-pane fade" id="v-pills-Apple" role="tabpanel" aria-labelledby="v-pills-Apple-tab">
-                {this.state.apple.map(apple => (
-                  <div class="col-md-4 mt-3" key={apple.brand_name}>
-                    <p>{apple.model_name}</p>
-                    <p>{apple.storage_capacity}</p>
-                    <p>{apple.price}</p>
-                  </div>
-                ))}
+             <PhonesbyApple/>
                 </div>
                 <div class="tab-pane fade" id="v-pills-Huawei" role="tabpanel" aria-labelledby="v-pills-Huawei-tab">
-                {this.state.huawei.map(huawei => (
-                  <div class="col-md-4 mt-3" key={huawei.brand_name}>
-                    <p>{huawei.model_name}</p>
-                    <p>{huawei.storage_capacity}</p>
-                    <p>{huawei.price}</p>
-                  </div>
-                ))}
+      <PhonesbyHuawei/>
                 </div>
                 <div class="tab-pane fade" id="v-pills-Nokia" role="tabpanel" aria-labelledby="v-pills-Nokia-tab">
-                {this.state.nokia.map(nokia => (
-                  <div class="col-md-4 mt-3" key={nokia.brand_name}>
-                    <p>{nokia.model_name}</p>
-                    <p>{nokia.storage_capacity}</p>
-                    <p>{nokia.price}</p>
-                  </div>
-                ))}
+                
                 </div>
               </div>
               </div>
