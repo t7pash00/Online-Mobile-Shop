@@ -85,7 +85,7 @@ class Registermodal extends Component {
                                                 </div>
                                               </div>
                                               <div className="form-group row">
-                                                  <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">Lastname :</label>
+                                              
                                                   <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">Phone :</label>
                                                 <div className="col-sm-7">
                                                     <input type="text" className="form-control form-control-sm"  placeholder="Phone"onChange={this.onChange}/>
@@ -93,14 +93,14 @@ class Registermodal extends Component {
                                               </div>
                                            
                                               <div className="form-group row">
-                                                  <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">Lastname :</label>
+                                                  
                                                   <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">StreetAddress:</label>
                                                 <div className="col-sm-7">
                                                     <input type="text" className="form-control form-control-sm"  placeholder="StreetAddress"onChange={this.onChange}/>
                                                 </div>
                                               </div>
                                               <div className="form-group row">
-                                                  <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">Lastname :</label>
+                                                  
                                                   <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">City:</label>
                                                 <div className="col-sm-7">
                                                     <input type="text" className="form-control form-control-sm"  placeholder="City"onChange={this.onChange}/>
@@ -108,7 +108,7 @@ class Registermodal extends Component {
                                               </div>
                                              
                                               <div className="form-group row">
-                                                  <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">Lastname :</label>
+                                                  
                                                   <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">PostalCode:</label>
                                                 <div className="col-sm-7">
                                                     <input type="text" className="form-control form-control-sm"  placeholder="PostalCode"onChange={this.onChange}/>
