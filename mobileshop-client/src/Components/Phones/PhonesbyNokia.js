@@ -39,7 +39,7 @@ class PhonesbyNokia extends Component {
                     </div>
                     <div className="card-body pt-0">
                       <h5 className="card-title">{nokia.brand_name}</h5>
-                      <p classNameass="card-text">{nokia.model_name}</p>
+                      <p className="card-text">{nokia.model_name}</p>
                       <p className="card-text">€{nokia.price}</p>
                       <a className="btn btn-success" data-toggle="modal" data-target={`#nokiadetail${nokia.phone_id}`}>More Details</a>
 
@@ -52,9 +52,9 @@ class PhonesbyNokia extends Component {
 
 
                       <div className="modal-content">
-                        <div classNames="modal-header" >
-                          <h4 classNamess="modal-title">Details</h4>
-                          <button type="button" classNamelass="close" data-dismiss="modal">&times;</button>
+                        <div className="modal-header" >
+                          <h4 className="modal-title">Details</h4>
+                          <button type="button" className="close" data-dismiss="modal">&times;</button>
                         </div>
                         <div className="modal-body">
                           <div className="row">
