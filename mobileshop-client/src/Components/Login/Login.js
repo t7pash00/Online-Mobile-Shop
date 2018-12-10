@@ -35,7 +35,7 @@ class Loginmodal extends Component {
     const { customer_id, firstname, lastname, email, password, phone, streetAddress, city, postalCode } = this.state;
 //console.log("handleSubmit, event", event);
 this.handleSubmit(event)
-  var apiBaseUrl = "http://localhost:3000/customers";
+  var apiBaseUrl = "http://localhost:3000/customers/";
   var self = this;
   var payload={
   "email":this.state.email,
@@ -89,14 +89,14 @@ this.handleSubmit(event)
                                       <div className="modal-body">
                                   
                                       <div className="form-group row">
-                                                  <label for="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">Email :</label>
+                                                  <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">Email :</label>
                                                 <div className="col-sm-7">
                                                     <input type="text" className="form-control form-control-sm"  placeholder="email" onChange={this.onChange}/>
                                                 </div>
                                               </div>
                                           
                                               <div className="form-group row">
-                                                  <label for="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">Password :</label>
+                                                  <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">Password :</label>
                                                 <div className="col-sm-7">
                                                     <input type="password" className="form-control form-control-sm"  placeholder="password" onChange={this.onChange}/>
                                                 </div>
