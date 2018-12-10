@@ -125,7 +125,7 @@ class PhonesbyHuawei extends Component {
                               CVV:
                           </label>
                             <div className="col-sm-8" >
-                              <input type="number" className="form-control form-control-sm" name="Card Verification Value" placeholder="cvv" maxlength="3" size="2" onChange={this.onChange} />
+                              <input type="number" className="form-control form-control-sm" name="Card Verification Value" placeholder="cvv" size="2" onChange={this.onChange} />
                             </div>
                           </div>
 
