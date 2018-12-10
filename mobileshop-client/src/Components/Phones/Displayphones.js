@@ -138,9 +138,9 @@ class Displayphones extends Component {
                           </label>
                             <div className="col-sm-8" >
                               <span className="expiration" >
-                                <input type="text" name="month" placeholder="MM" maxlength="2" size="2" />
+                                <input type="text" name="month" placeholder="MM" size="2" />
                                 <span>/</span>
-                                <input type="text" name="year" placeholder="YY" maxlength="2" size="2" />
+                                <input type="text" name="year" placeholder="YY" size="2" />
                               </span>
                             </div>
                           </div>
