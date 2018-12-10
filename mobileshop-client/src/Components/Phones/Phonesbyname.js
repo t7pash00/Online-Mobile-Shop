@@ -4,6 +4,7 @@ import Displayphones from './Displayphones';
 import PhonesbySamsung from './PhonesbySamsung';
 import PhonesbyApple from './PhonesbyApple';
 import PhonesbyHuawei from './PhonesbyHuawei';
+import PhonesbyNokia from './PhonesbyNokia';
 
 
 
@@ -95,7 +96,7 @@ class Phonesbyname extends Component {
       <PhonesbyHuawei/>
                 </div>
                 <div class="tab-pane fade" id="v-pills-Nokia" role="tabpanel" aria-labelledby="v-pills-Nokia-tab">
-                
+                <PhonesbyNokia/>
                 </div>
               </div>
               </div>
