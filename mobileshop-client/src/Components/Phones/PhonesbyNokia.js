@@ -102,7 +102,7 @@ class PhonesbyNokia extends Component {
                         <div className="modal-body">
 
                           <div className="form-group row">
-                            <label for="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">
+                            <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">
                               Card Name:
                           </label>
                             <div className="col-sm-8">
@@ -111,7 +111,7 @@ class PhonesbyNokia extends Component {
                           </div>
 
                           <div className="form-group row">
-                            <label for="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">
+                            <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">
                               Card Number:
                           </label>
 
@@ -121,7 +121,7 @@ class PhonesbyNokia extends Component {
                           </div>
 
                           <div className="form-group row">
-                            <label for="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">
+                            <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">
                               CVV:
                           </label>
                             <div className="col-sm-8" >
@@ -130,7 +130,7 @@ class PhonesbyNokia extends Component {
                           </div>
 
                           <div className="form-group row">
-                            <label for="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">
+                            <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">
                               Expire Date:
                           </label>
                             <div className="col-sm-8" >
