@@ -72,9 +72,9 @@ class PhonesbyHuawei extends Component {
                             <p className="col-sm-7 textline">{huawei.storage_capacity}</p>
                           </div>
 
-                          <div class="row">
-                            <p class="col-sm-5 text"><b>Color:</b></p>
-                            <p class="col-sm-7 textline">{huawei.color}</p>
+                          <div className="row">
+                            <p className="col-sm-5 text"><b>Color:</b></p>
+                            <p className="col-sm-7 textline">{huawei.color}</p>
                           </div>
 
                           <div className="row">
@@ -102,7 +102,7 @@ class PhonesbyHuawei extends Component {
                         <div className="modal-body">
 
                           <div className="form-group row">
-                            <label htmlFor="colFormLabelSm" class="col-sm-3 col-form-label col-form-label-sm">
+                            <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">
                               Card Name:
                           </label>
                             <div className="col-sm-8">
