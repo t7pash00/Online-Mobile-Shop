@@ -64,39 +64,40 @@ class Phonesbyname extends Component {
     
     return (
       
-      <div class="row" style={{ marginTop: '80px', height: "auto" }}>
-        <div class="col-lg-2">
-          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <a class="nav-link active" id="v-pills-Home-tab" data-toggle="pill" href="#v-pills-Home" role="tab" aria-controls="v-pills-Home" aria-selected="true">Home</a>
-            <a class="nav-link" id="v-pills-Samsung-tab" data-toggle="pill" href="#v-pills-Samsung" role="tab" aria-controls="v-pills-Samsung" aria-selected="false">Samsung</a>
-            <a class="nav-link" id="v-pills-Apple-tab" data-toggle="pill" href="#v-pills-Apple" role="tab" aria-controls="v-pills-Apple" aria-selected="false">Apple</a>
-            <a class="nav-link" id="v-pills-Huawei-tab" data-toggle="pill" href="#v-pills-Huawei" role="tab" aria-controls="v-pills-Huawei" aria-selected="false">Huawei</a>
-            <a class="nav-link" id="v-pills-Nokia-tab" data-toggle="pill" href="#v-pills-Nokia" role="tab" aria-controls="v-pills-Nokia" aria-selected="false">Nokia</a>
+     
+      <div className="row" style={{ marginTop: '80px', height: "auto" }}>
+        <div className="col-lg-2">
+          <div className="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <a className="nav-link active" id="v-pills-Home-tab" data-toggle="pill" href="#v-pills-Home" role="tab" aria-controls="v-pills-Home" aria-selected="true">Home</a>
+            <a className="nav-link" id="v-pills-Samsung-tab" data-toggle="pill" href="#v-pills-Samsung" role="tab" aria-controls="v-pills-Samsung" aria-selected="false">Samsung</a>
+            <a className="nav-link" id="v-pills-Apple-tab" data-toggle="pill" href="#v-pills-Apple" role="tab" aria-controls="v-pills-Apple" aria-selected="false">Apple</a>
+            <a className="nav-link" id="v-pills-Huawei-tab" data-toggle="pill" href="#v-pills-Huawei" role="tab" aria-controls="v-pills-Huawei" aria-selected="false">Huawei</a>
+            <a className="nav-link" id="v-pills-Nokia-tab" data-toggle="pill" href="#v-pills-Nokia" role="tab" aria-controls="v-pills-Nokia" aria-selected="false">Nokia</a>
           </div>
         </div>
-        <div class="col-lg-10">
+        <div className="col-lg-10">
           
 
-              <div class="tab-content" id="v-pills-tabContlklkhlent">
-              <div class="tab-pane fade show active" id="v-pills-Home" role="tabpanel" aria-labelledby="v-pills-Home-tab">
-                 <Displayphones/>
+              <div className="tab-content" id="v-pills-tabContlklkhlent">
+              <div className="tab-pane fade show active" id="v-pills-Home" role="tabpanel" aria-labelledby="v-pills-Home-tab">
+            <Displayphones/>
                 </div>
                
                 
-                <div class="tab-pane fade " id="v-pills-Samsung" role="tabpanel" aria-labelledby="v-pills-Samsung-tab">
-               <PhonesbySamsung/>
+                <div className="tab-pane fade " id="v-pills-Samsung" role="tabpanel" aria-labelledby="v-pills-Samsung-tab">
+            <PhonesbySamsung/>
                 </div>
 
                
                 
-                <div class="tab-pane fade" id="v-pills-Apple" role="tabpanel" aria-labelledby="v-pills-Apple-tab">
-             <PhonesbyApple/>
+                <div className="tab-pane fade" id="v-pills-Apple" role="tabpanel" aria-labelledby="v-pills-Apple-tab">
+            <PhonesbyApple/>
                 </div>
-                <div class="tab-pane fade" id="v-pills-Huawei" role="tabpanel" aria-labelledby="v-pills-Huawei-tab">
-      <PhonesbyHuawei/>
+                <div className="tab-pane fade" id="v-pills-Huawei" role="tabpanel" aria-labelledby="v-pills-Huawei-tab">
+            <PhonesbyHuawei/>
                 </div>
-                <div class="tab-pane fade" id="v-pills-Nokia" role="tabpanel" aria-labelledby="v-pills-Nokia-tab">
-                <PhonesbyNokia/>
+                <div className="tab-pane fade" id="v-pills-Nokia" role="tabpanel" aria-labelledby="v-pills-Nokia-tab">
+            <PhonesbyNokia/>
                 </div>
               </div>
               </div>
