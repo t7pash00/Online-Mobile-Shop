@@ -9,6 +9,15 @@ var customers = {
       [customer_id], 
       callback);
   },
+  getRegisteredcustomer: function(email,pass, callback) {
+    console.log(12345);
+    return db.query(
+      'select * from customers where email=? and password=?',
+      [email,pass],
+      callback);
+      
+      //email=? and password=?
+  },
 
   getcustomerByEmail: function(email, callback) {
     return db.query(
