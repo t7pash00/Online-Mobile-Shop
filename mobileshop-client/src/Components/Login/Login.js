@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-
-
-class Loginmodal extends Component {
+class Login extends Component {
   constructor() {
     super();
     this.onChange = this.onChange.bind(this);
@@ -22,7 +20,6 @@ class Loginmodal extends Component {
   }
 
   onChange = e => {
-
     const state = this.state;
     state[e.target.name] = e.target.value;
     this.setState({
@@ -30,34 +27,30 @@ class Loginmodal extends Component {
     });
   };
 
-
   handleSubmit = event => {
     console.log("handleSubmit, event", event);
     event.preventDefault(); // Let's stop this event.
     event.stopPropagation(); // Really this time.
-    const { customer_id, firstname, lastname, email, password, phone, streetAddress, city, postalCode } = this.state;
+    const { email } = this.state;
     console.log(email);
   
     var apiBaseUrl = "http://localhost:3000/customers/";
-    var self = this;
     var payload = {
       "email": this.state.email,
       "pass": this.state.password
     }
 
-
     axios.post(apiBaseUrl + 'loginby', payload)
-    .then(function (response) {
-      console.log(response);
-    
-      if(response.data[0])
-      {
-
-
-        alert("You are welcome.");
-      }else{
-        alert("invalid password");
+    .then(response => {
+      if(response.data[0]) {
+        document.location = "/profile";
       }
+      else {
+        alert ('Invalid email or password')
+      }
+      localStorage.setItem('usertoken', response.data)
+      return response.data
+      
     })
     .catch(function (error) {
       console.log(error);
@@ -105,55 +98,39 @@ apiBaseUrl+= 'loginby/email/'+this.state.email+'/pass/'+this.state.password;
   //     console.log(res.data);
   //   });
 
-
   render() {
+    if (localStorage.usertoken){document.location="/profile"}
     return (
-
-
-      <form onSubmit={this.handleSubmit}>
-
-
-
-        <div id="loginpage" className="modal fade" role="dialog">
-          <div className="modal-dialog">
-
-
-            <div className="modal-content">
-              <div className="modal-header">
-                <h4 className="modal-title">Login</h4>
-                <button type="button" className="close" data-dismiss="modal">&times;</button>
-              </div>
-              <div className="modal-body">
-
-                <div className="form-group row">
-                  <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">Email :</label>
-                  <div className="col-sm-7">
-                    <input type="text" className="form-control form-control-sm" placeholder="email" name="email" onChange={this.onChange} />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <div class="card card-body bg-light mt-5">
+              <h2>Login</h2>
+              <p>Fill in your credentials</p>
+              <form onSubmit={this.handleSubmit}>   
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control form-control-lg" required name="email" onChange={this.onChange} />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" required class="form-control form-control-lg"  onChange={this.onChange} />
+                </div>
+                <div class="form-row">
+                  <div class="col">
+                    <button type="submit" class="btn btn-success btn-block">Login</button>
+                  </div>
+                  <div class="col">
+                    <a href="/register" class="btn btn-light btn-block">No account? Register</a>
                   </div>
                 </div>
-
-                <div className="form-group row">
-                  <label htmlFor="colFormLabelSm" className="col-sm-3 col-form-label col-form-label-sm">Password :</label>
-                  <div className="col-sm-7">
-                    <input type="password" className="form-control form-control-sm" placeholder="password" name="password" onChange={this.onChange} />
-                  </div>
-                </div>
-
-              </div>
-
-              <div className="modal-footer">
-                <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
-                <button className="btn btn-success" type="submit">Login</button>
-
-              </div>
+              </form>
             </div>
-
           </div>
         </div>
-      </form>
-
+      </div>   
     );
   }
 }
 
-export default Loginmodal;
+export default Login;
