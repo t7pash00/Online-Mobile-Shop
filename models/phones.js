@@ -11,8 +11,8 @@ var phones = {
   },
   addphone: function(phones, callback) {
     return db.query(
-      'insert into phones values (?,?,?,?,?,?)',
-      [phones.phone_id, phones.brand_name, phones.model_name, phones.color, phones.storage_capacity, phones.price],
+      'insert into phones values (?,?,?,?,?,?,?)',
+      [phones.phone_id, phones.brand_name, phones.model_name, phones.color, phones.storage_capacity, phones.price,phones.imagename],
       callback
     );
   },

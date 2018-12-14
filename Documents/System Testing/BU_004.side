@@ -1,0 +1,256 @@
+{
+  "id": "d9c92cbe-c4cf-4e61-ba3e-47d69fe08340",
+  "version": "1.1",
+  "name": "BU_004",
+  "url": "http://localhost:3001",
+  "tests": [{
+    "id": "3bf01ac9-0600-4111-8e5d-b56906dd201d",
+    "name": "BU_004",
+    "commands": [{
+      "id": "0f4f84f1-2cf9-4ae7-bf44-5972ae1ea4a5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85591af5-2b99-48e3-a790-f905128d6703",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce80f7e5-7acf-49d9-99d1-c9b2777b32fb",
+      "comment": "",
+      "command": "click",
+      "target": "id=v-pills-Samsung-tab",
+      "targets": [
+        ["id=v-pills-Samsung-tab", "id"],
+        ["linkText=Samsung", "linkText"],
+        ["css=#v-pills-Samsung-tab", "css"],
+        ["css=#v-pills-Samsung-tab", "css:finder"],
+        ["xpath=//a[contains(text(),'Samsung')]", "xpath:link"],
+        ["xpath=//a[@id='v-pills-Samsung-tab']", "xpath:attributes"],
+        ["xpath=//div[@id='v-pills-tab']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#v-pills-Samsung')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6d82f84-93ba-4b3d-b5c7-f70c5f063f6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#v-pills-Samsung .col-md-4:nth-child(1) .mdl-card__actions > .mdl-button",
+      "targets": [
+        ["css=#v-pills-Samsung .col-md-4:nth-child(1) .mdl-card__actions > .mdl-button", "css:finder"],
+        ["xpath=//div[@id='v-pills-Samsung']/div/div/div/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a9735c5-d4f9-4eba-838d-db197ae32ac4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#samsungdetail7 .mdl-button--colored",
+      "targets": [
+        ["css=#samsungdetail7 .mdl-button--colored", "css:finder"],
+        ["xpath=//div[@id='samsungdetail7']/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/div/div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b42a7fd-ef01-4f32-959b-7f1627041392",
+      "comment": "",
+      "command": "click",
+      "target": "css=#buysamsung7 .mdl-button:nth-child(1)",
+      "targets": [
+        ["css=#buysamsung7 .mdl-button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='buysamsung7']/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[3]/div/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "863c0b30-5711-423a-8360-8daecd7faa2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#v-pills-Samsung .col-md-4:nth-child(1) .material-icons",
+      "targets": [
+        ["css=#v-pills-Samsung .col-md-4:nth-child(1) .material-icons", "css:finder"],
+        ["xpath=//div[@id='v-pills-Samsung']/div/div/div/div/div[5]/button/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div[5]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70a0e689-0b69-4dc8-8bd4-a5dc1d314a05",
+      "comment": "",
+      "command": "click",
+      "target": "css=#samsungdetail7 .mdl-button--colored",
+      "targets": [
+        ["css=#samsungdetail7 .mdl-button--colored", "css:finder"],
+        ["xpath=//div[@id='samsungdetail7']/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/div/div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "738f0585-5665-4aae-9fd9-32297b607552",
+      "comment": "",
+      "command": "click",
+      "target": "css=#buysamsung7 > div.modal-dialog > div.modal-content > div.modal-header > button.close",
+      "targets": [
+        ["css=#buysamsung7 > div.modal-dialog > div.modal-content > div.modal-header > button.close", "css"],
+        ["css=#buysamsung7 .close", "css:finder"],
+        ["xpath=(//button[@type='button'])[33]", "xpath:attributes"],
+        ["xpath=//div[@id='buysamsung7']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[3]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25219b00-1b1b-41e0-8a80-4c1396165659",
+      "comment": "",
+      "command": "click",
+      "target": "id=v-pills-Nokia-tab",
+      "targets": [
+        ["id=v-pills-Nokia-tab", "id"],
+        ["linkText=Nokia", "linkText"],
+        ["css=#v-pills-Nokia-tab", "css"],
+        ["css=#v-pills-Nokia-tab", "css:finder"],
+        ["xpath=//a[contains(text(),'Nokia')]", "xpath:link"],
+        ["xpath=//a[@id='v-pills-Nokia-tab']", "xpath:attributes"],
+        ["xpath=//div[@id='v-pills-tab']/a[5]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#v-pills-Nokia')]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b788e81f-6ce3-400d-98a2-56b0d4ce95a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#v-pills-Nokia .col-md-4:nth-child(1) .mdl-card__actions > .mdl-button",
+      "targets": [
+        ["css=#v-pills-Nokia .col-md-4:nth-child(1) .mdl-card__actions > .mdl-button", "css:finder"],
+        ["xpath=//div[@id='v-pills-Nokia']/div/div/div/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fba7f93-8e03-49a9-9899-22c749287d11",
+      "comment": "",
+      "command": "click",
+      "target": "css=#nokiadetail11 .mdl-button--colored",
+      "targets": [
+        ["css=#nokiadetail11 .mdl-button--colored", "css:finder"],
+        ["xpath=//div[@id='nokiadetail11']/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div[2]/div/div/div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fb183d8-1b8c-4aba-a65a-372b2d702f1c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#buynokia11 .btn-success",
+      "targets": [
+        ["css=#buynokia11 .btn-success", "css:finder"],
+        ["xpath=(//button[@type='submit'])[28]", "xpath:attributes"],
+        ["xpath=//div[@id='buynokia11']/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div[3]/div/div/div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b445673-34a6-4ba9-9ef7-7e30ddacca22",
+      "comment": "",
+      "command": "click",
+      "target": "css=#buynokia11 .mdl-button:nth-child(1)",
+      "targets": [
+        ["css=#buynokia11 .mdl-button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='buynokia11']/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div[3]/div/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64ce407a-8451-47a0-b3ae-442354c32fe3",
+      "comment": "",
+      "command": "click",
+      "target": "id=v-pills-Apple-tab",
+      "targets": [
+        ["id=v-pills-Apple-tab", "id"],
+        ["linkText=Apple", "linkText"],
+        ["css=#v-pills-Apple-tab", "css"],
+        ["css=#v-pills-Apple-tab", "css:finder"],
+        ["xpath=//a[contains(text(),'Apple')]", "xpath:link"],
+        ["xpath=//a[@id='v-pills-Apple-tab']", "xpath:attributes"],
+        ["xpath=//div[@id='v-pills-tab']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#v-pills-Apple')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff3662b2-1087-4c62-a45f-ef96bbe1e5dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#v-pills-Apple .col-md-4:nth-child(1) .mdl-card__actions > .mdl-button",
+      "targets": [
+        ["css=#v-pills-Apple .col-md-4:nth-child(1) .mdl-card__actions > .mdl-button", "css:finder"],
+        ["xpath=//div[@id='v-pills-Apple']/div/div/div/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fb563b6-3c00-4634-b00c-1dc56c6d7bd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#appledetail1 .mdl-button--colored",
+      "targets": [
+        ["css=#appledetail1 .mdl-button--colored", "css:finder"],
+        ["xpath=//div[@id='appledetail1']/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/div/div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a259cb2-fc1e-48ec-b079-202bc8816472",
+      "comment": "",
+      "command": "click",
+      "target": "css=#buyapple1 .mdl-button:nth-child(1)",
+      "targets": [
+        ["css=#buyapple1 .mdl-button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='buyapple1']/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[3]/div/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "360274fa-510d-4201-9dd7-a0a93980358e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#v-pills-Apple .col-md-4:nth-child(3) .material-icons",
+      "targets": [
+        ["css=#v-pills-Apple .col-md-4:nth-child(3) .material-icons", "css:finder"],
+        ["xpath=//div[@id='v-pills-Apple']/div/div/div[3]/div/div[5]/button/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[3]/div/div[5]/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9249819e-77fe-476b-8cb0-263db82b5ecc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#appledetail3 > div.modal-dialog > div.modal-content > div.modal-header > button.close",
+      "targets": [
+        ["css=#appledetail3 > div.modal-dialog > div.modal-content > div.modal-header > button.close", "css"],
+        ["css=#appledetail3 .close", "css:finder"],
+        ["xpath=(//button[@type='button'])[44]", "xpath:attributes"],
+        ["xpath=//div[@id='appledetail3']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[3]/div[2]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "824f88e4-5506-4403-9b13-f672a3bba705",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3bf01ac9-0600-4111-8e5d-b56906dd201d"]
+  }],
+  "urls": ["http://localhost:3001/"],
+  "plugins": []
+}
